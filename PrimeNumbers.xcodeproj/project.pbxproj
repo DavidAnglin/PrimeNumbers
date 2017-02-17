@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E21DE001E5670C6001E8A91 /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21DDFF1E5670C6001E8A91 /* ViewController+Alert.swift */; };
 		2EC7B5C11E5652B2001D22A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5C01E5652B2001D22A5 /* AppDelegate.swift */; };
-		2EC7B5C31E5652B2001D22A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5C21E5652B2001D22A5 /* ViewController.swift */; };
 		2EC7B5C61E5652B2001D22A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B5C41E5652B2001D22A5 /* Main.storyboard */; };
-		2EC7B5C91E5652B2001D22A5 /* PrimeNumbers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5C71E5652B2001D22A5 /* PrimeNumbers.xcdatamodeld */; };
 		2EC7B5CB1E5652B2001D22A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B5CA1E5652B2001D22A5 /* Assets.xcassets */; };
 		2EC7B5CE1E5652B2001D22A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B5CC1E5652B2001D22A5 /* LaunchScreen.storyboard */; };
 		2EC7B5D91E5652B2001D22A5 /* PrimeNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5D81E5652B2001D22A5 /* PrimeNumbersTests.swift */; };
 		2EC7B5E41E5652B2001D22A5 /* PrimeNumbersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5E31E5652B2001D22A5 /* PrimeNumbersUITests.swift */; };
+		2EC7B5F21E565D88001D22A5 /* PrimeNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5F11E565D88001D22A5 /* PrimeNumbers.swift */; };
+		2EC7B5F91E566690001D22A5 /* PrimeNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5F81E566690001D22A5 /* PrimeNumberViewController.swift */; };
+		2EC7B5FB1E5666A8001D22A5 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5FA1E5666A8001D22A5 /* LandingViewController.swift */; };
+		2EC7B5FD1E5666C0001D22A5 /* PrimeNumberListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5FC1E5666C0001D22A5 /* PrimeNumberListTableViewController.swift */; };
+		2EC7B5FF1E566865001D22A5 /* PrimeNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5FE1E566865001D22A5 /* PrimeNumberTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E21DDFF1E5670C6001E8A91 /* ViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+Alert.swift"; path = "../ViewController+Alert.swift"; sourceTree = "<group>"; };
 		2EC7B5BD1E5652B2001D22A5 /* PrimeNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC7B5C01E5652B2001D22A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EC7B5C21E5652B2001D22A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2EC7B5C51E5652B2001D22A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2EC7B5C81E5652B2001D22A5 /* PrimeNumbers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PrimeNumbers.xcdatamodel; sourceTree = "<group>"; };
 		2EC7B5CA1E5652B2001D22A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EC7B5CD1E5652B2001D22A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EC7B5CF1E5652B2001D22A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		2EC7B5DF1E5652B2001D22A5 /* PrimeNumbersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeNumbersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC7B5E31E5652B2001D22A5 /* PrimeNumbersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersUITests.swift; sourceTree = "<group>"; };
 		2EC7B5E51E5652B2001D22A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC7B5F11E565D88001D22A5 /* PrimeNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumbers.swift; sourceTree = "<group>"; };
+		2EC7B5F81E566690001D22A5 /* PrimeNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumberViewController.swift; sourceTree = "<group>"; };
+		2EC7B5FA1E5666A8001D22A5 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		2EC7B5FC1E5666C0001D22A5 /* PrimeNumberListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumberListTableViewController.swift; sourceTree = "<group>"; };
+		2EC7B5FE1E566865001D22A5 /* PrimeNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumberTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E21DE011E5670CF001E8A91 /* Extenisions */ = {
+			isa = PBXGroup;
+			children = (
+				2E21DDFF1E5670C6001E8A91 /* ViewController+Alert.swift */,
+			);
+			name = Extenisions;
+			sourceTree = "<group>";
+		};
 		2EC7B5B41E5652B2001D22A5 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +115,12 @@
 		2EC7B5BF1E5652B2001D22A5 /* PrimeNumbers */ = {
 			isa = PBXGroup;
 			children = (
-				2EC7B5C01E5652B2001D22A5 /* AppDelegate.swift */,
-				2EC7B5C21E5652B2001D22A5 /* ViewController.swift */,
-				2EC7B5C41E5652B2001D22A5 /* Main.storyboard */,
-				2EC7B5CA1E5652B2001D22A5 /* Assets.xcassets */,
-				2EC7B5CC1E5652B2001D22A5 /* LaunchScreen.storyboard */,
-				2EC7B5CF1E5652B2001D22A5 /* Info.plist */,
-				2EC7B5C71E5652B2001D22A5 /* PrimeNumbers.xcdatamodeld */,
+				2EC7B5F61E565DD0001D22A5 /* Delegates */,
+				2EC7B5F71E565DD7001D22A5 /* View Controllers */,
+				2EC7B5F51E565DC4001D22A5 /* Views */,
+				2EC7B5F41E565DB4001D22A5 /* Supporting Files */,
+				2EC7B5F31E565D96001D22A5 /* Models */,
+				2E21DE011E5670CF001E8A91 /* Extenisions */,
 			);
 			path = PrimeNumbers;
 			sourceTree = "<group>";
@@ -126,6 +141,51 @@
 				2EC7B5E51E5652B2001D22A5 /* Info.plist */,
 			);
 			path = PrimeNumbersUITests;
+			sourceTree = "<group>";
+		};
+		2EC7B5F31E565D96001D22A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EC7B5F11E565D88001D22A5 /* PrimeNumbers.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2EC7B5F41E565DB4001D22A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EC7B5CF1E5652B2001D22A5 /* Info.plist */,
+				2EC7B5CA1E5652B2001D22A5 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EC7B5F51E565DC4001D22A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EC7B5CC1E5652B2001D22A5 /* LaunchScreen.storyboard */,
+				2EC7B5C41E5652B2001D22A5 /* Main.storyboard */,
+				2EC7B5FE1E566865001D22A5 /* PrimeNumberTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2EC7B5F61E565DD0001D22A5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2EC7B5C01E5652B2001D22A5 /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		2EC7B5F71E565DD7001D22A5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EC7B5F81E566690001D22A5 /* PrimeNumberViewController.swift */,
+				2EC7B5FA1E5666A8001D22A5 /* LandingViewController.swift */,
+				2EC7B5FC1E5666C0001D22A5 /* PrimeNumberListTableViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC7B5C31E5652B2001D22A5 /* ViewController.swift in Sources */,
+				2EC7B5FF1E566865001D22A5 /* PrimeNumberTableViewCell.swift in Sources */,
 				2EC7B5C11E5652B2001D22A5 /* AppDelegate.swift in Sources */,
-				2EC7B5C91E5652B2001D22A5 /* PrimeNumbers.xcdatamodeld in Sources */,
+				2EC7B5F21E565D88001D22A5 /* PrimeNumbers.swift in Sources */,
+				2EC7B5FB1E5666A8001D22A5 /* LandingViewController.swift in Sources */,
+				2E21DE001E5670C6001E8A91 /* ViewController+Alert.swift in Sources */,
+				2EC7B5F91E566690001D22A5 /* PrimeNumberViewController.swift in Sources */,
+				2EC7B5FD1E5666C0001D22A5 /* PrimeNumberListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +582,7 @@
 				2EC7B5EA1E5652B2001D22A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EC7B5EB1E5652B2001D22A5 /* Build configuration list for PBXNativeTarget "PrimeNumbersTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +591,7 @@
 				2EC7B5ED1E5652B2001D22A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EC7B5EE1E5652B2001D22A5 /* Build configuration list for PBXNativeTarget "PrimeNumbersUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,21 +600,9 @@
 				2EC7B5F01E5652B2001D22A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2EC7B5C71E5652B2001D22A5 /* PrimeNumbers.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2EC7B5C81E5652B2001D22A5 /* PrimeNumbers.xcdatamodel */,
-			);
-			currentVersion = 2EC7B5C81E5652B2001D22A5 /* PrimeNumbers.xcdatamodel */;
-			path = PrimeNumbers.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2EC7B5B51E5652B2001D22A5 /* Project object */;
 }

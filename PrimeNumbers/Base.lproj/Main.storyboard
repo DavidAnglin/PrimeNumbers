@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LandingViewController" customModule="PrimeNumbers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,230 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many Prime Numbers do you want to see:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVj-vZ-PWI">
+                                <rect key="frame" x="8" y="161.5" width="359" height="67"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oCV-9h-fPj">
+                                <rect key="frame" x="8" y="237" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View a Specific Prime Number:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4A-q5-drC">
+                                <rect key="frame" x="8" y="358.5" width="359" height="67"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7US-qN-isx">
+                                <rect key="frame" x="8" y="433.5" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33O-aC-WRf">
+                                <rect key="frame" x="8" y="471.5" width="359" height="33"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="See Your Results!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPrimeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21L-Tl-N4H"/>
+                                    <segue destination="61J-YC-BCt" kind="show" identifier="showPrimeNumber" id="b6N-aV-1qo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38P-kE-X90">
+                                <rect key="frame" x="8" y="316.5" width="359" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCh-RZ-vJs">
+                                <rect key="frame" x="8" y="275" width="359" height="33"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="See Your Results!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPrimeNumberList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGy-KO-Tvj"/>
+                                    <segue destination="g7D-Mr-C6V" kind="showDetail" identifier="showPrimeList" id="EDQ-w0-nb4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QCh-RZ-vJs" firstAttribute="top" secondItem="oCV-9h-fPj" secondAttribute="bottom" constant="8" id="6VA-nx-yx5"/>
+                            <constraint firstItem="7US-qN-isx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="77s-6f-pJg"/>
+                            <constraint firstItem="38P-kE-X90" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="7ds-JZ-tjd"/>
+                            <constraint firstItem="h4A-q5-drC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Aw8-Vd-Bmi"/>
+                            <constraint firstItem="QCh-RZ-vJs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="BeQ-lG-SC9"/>
+                            <constraint firstAttribute="trailing" secondItem="38P-kE-X90" secondAttribute="trailing" constant="8" id="Bqd-Lx-EnB"/>
+                            <constraint firstAttribute="trailing" secondItem="oCV-9h-fPj" secondAttribute="trailing" constant="8" id="E7o-Y6-lmC"/>
+                            <constraint firstItem="oCV-9h-fPj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="G4n-ym-PpU"/>
+                            <constraint firstItem="33O-aC-WRf" firstAttribute="top" secondItem="7US-qN-isx" secondAttribute="bottom" constant="8" id="HfJ-ZH-Urp"/>
+                            <constraint firstItem="33O-aC-WRf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Ja4-zz-QD5"/>
+                            <constraint firstItem="kVj-vZ-PWI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="KjU-kT-wls"/>
+                            <constraint firstItem="oCV-9h-fPj" firstAttribute="top" secondItem="kVj-vZ-PWI" secondAttribute="bottom" constant="8" id="LHE-3r-bTU"/>
+                            <constraint firstAttribute="trailing" secondItem="7US-qN-isx" secondAttribute="trailing" constant="8" id="SPR-4I-1pQ"/>
+                            <constraint firstItem="h4A-q5-drC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ypm-Xa-BCF"/>
+                            <constraint firstAttribute="trailing" secondItem="kVj-vZ-PWI" secondAttribute="trailing" constant="8" id="ajO-0d-nHu"/>
+                            <constraint firstItem="7US-qN-isx" firstAttribute="top" secondItem="h4A-q5-drC" secondAttribute="bottom" constant="8" id="cyd-wB-5nv"/>
+                            <constraint firstAttribute="trailing" secondItem="33O-aC-WRf" secondAttribute="trailing" constant="8" id="dM4-rf-W5a"/>
+                            <constraint firstItem="33O-aC-WRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fe5-Eb-8Df"/>
+                            <constraint firstItem="kVj-vZ-PWI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g6w-AF-UQ3"/>
+                            <constraint firstItem="oCV-9h-fPj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lF3-q6-xNz"/>
+                            <constraint firstItem="38P-kE-X90" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lno-1N-5xy"/>
+                            <constraint firstItem="38P-kE-X90" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oU2-Zy-U1r"/>
+                            <constraint firstAttribute="trailing" secondItem="QCh-RZ-vJs" secondAttribute="trailing" constant="8" id="p6N-lN-SVq"/>
+                            <constraint firstItem="QCh-RZ-vJs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qjN-1K-uFA"/>
+                            <constraint firstItem="h4A-q5-drC" firstAttribute="top" secondItem="38P-kE-X90" secondAttribute="bottom" constant="8" id="rCu-bG-9Os"/>
+                            <constraint firstItem="38P-kE-X90" firstAttribute="top" secondItem="QCh-RZ-vJs" secondAttribute="bottom" constant="8" id="uYB-Yf-YFh"/>
+                            <constraint firstAttribute="trailing" secondItem="h4A-q5-drC" secondAttribute="trailing" constant="8" id="wGX-p8-PXp"/>
+                            <constraint firstItem="7US-qN-isx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="zNH-rY-TY6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="listNumberEntry" destination="oCV-9h-fPj" id="E0W-Hn-Glp"/>
+                        <outlet property="specificNumberEntry" destination="7US-qN-isx" id="LEK-OT-Nsw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-354.39999999999998" y="154.27286356821591"/>
+        </scene>
+        <!--Prime Number-->
+        <scene sceneID="rik-Qc-21f">
+            <objects>
+                <viewController id="sSk-42-lHh" customClass="PrimeNumberViewController" customModule="PrimeNumbers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j19-D0-RAD"/>
+                        <viewControllerLayoutGuide type="bottom" id="19i-xk-mwk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fex-ix-qX8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntl-If-uun">
+                                <rect key="frame" x="8" y="284" width="359" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qQY-Hm-rVC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ntl-If-uun" secondAttribute="trailing" constant="8" id="Hte-VR-i5x"/>
+                            <constraint firstItem="ntl-If-uun" firstAttribute="centerY" secondItem="fex-ix-qX8" secondAttribute="centerY" id="l4o-dX-xK6"/>
+                            <constraint firstItem="ntl-If-uun" firstAttribute="leading" secondItem="fex-ix-qX8" secondAttribute="leading" constant="8" id="stS-vk-zoY"/>
+                            <constraint firstItem="ntl-If-uun" firstAttribute="centerX" secondItem="fex-ix-qX8" secondAttribute="centerX" id="w8Z-1u-Y7w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Prime Number" id="GZo-pN-cAE">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Pz7-Yc-7vu">
+                            <connections>
+                                <segue destination="wfO-yq-dPY" kind="unwind" unwindAction="unwindToLandingPageWithSegue:" id="zMK-fo-uFq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="primeNumber" destination="ntl-If-uun" id="Ev5-QD-aJz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Guo-ru-7E5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wfO-yq-dPY" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="866"/>
+        </scene>
+        <!--Prime Number List-->
+        <scene sceneID="dZd-3F-71E">
+            <objects>
+                <tableViewController id="iVk-qu-sVU" customClass="PrimeNumberListTableViewController" customModule="PrimeNumbers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NfY-p3-5zi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="primeNumberCell" textLabel="GCh-1k-WiP" style="IBUITableViewCellStyleDefault" id="idO-6x-jD0" customClass="PrimeNumberTableViewCell" customModule="PrimeNumbers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="idO-6x-jD0" id="Mtq-NN-vFg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GCh-1k-WiP">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="primeNumber" destination="GCh-1k-WiP" id="YpL-pd-dpy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iVk-qu-sVU" id="hs1-Ko-1Hr"/>
+                            <outlet property="delegate" destination="iVk-qu-sVU" id="sRi-uM-t60"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Prime Number List" id="w0H-bT-xM3">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="A6B-Wd-GAe">
+                            <connections>
+                                <segue destination="UfR-HM-dua" kind="unwind" unwindAction="unwindToLandingPageWithSegue:" id="EpX-TL-F3d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9P-SN-ROb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="UfR-HM-dua" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1249" y="154"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3eO-na-3vo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g7D-Mr-C6V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSX-Vb-3JC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iVk-qu-sVU" kind="relationship" relationship="rootViewController" id="sTs-0c-W8G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rv2-HV-AEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="154"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K8y-I2-ymz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="61J-YC-BCt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FlN-xA-bch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sSk-42-lHh" kind="relationship" relationship="rootViewController" id="z7s-RI-npk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AE-g9-4US" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="866"/>
         </scene>
     </scenes>
 </document>
