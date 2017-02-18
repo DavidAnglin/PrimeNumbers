@@ -10,13 +10,15 @@ import UIKit
 
 class PrimeNumberViewController: UIViewController {
 
+    // MARK: - Public Variable -
     var primeNumberToShow: Int!
     
+    // MARK: - IBOutlets -
     @IBOutlet weak var primeNumber: UILabel!
     
+    // MARK: - View Controller Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-
         primeNumber.text = String(primeNumberToShow)
     }
 }
