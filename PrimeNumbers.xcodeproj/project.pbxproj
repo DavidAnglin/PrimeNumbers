@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E21DE001E5670C6001E8A91 /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21DDFF1E5670C6001E8A91 /* ViewController+Alert.swift */; };
+		2E3F77601E590B6E005EF864 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F775F1E590B6E005EF864 /* UIViewController+DismissKeyboard.swift */; };
 		2EC7B5C11E5652B2001D22A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5C01E5652B2001D22A5 /* AppDelegate.swift */; };
 		2EC7B5C61E5652B2001D22A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B5C41E5652B2001D22A5 /* Main.storyboard */; };
 		2EC7B5CB1E5652B2001D22A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B5CA1E5652B2001D22A5 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		2E21DDFF1E5670C6001E8A91 /* ViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+Alert.swift"; path = "../ViewController+Alert.swift"; sourceTree = "<group>"; };
+		2E3F775F1E590B6E005EF864 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		2EC7B5BD1E5652B2001D22A5 /* PrimeNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC7B5C01E5652B2001D22A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC7B5C51E5652B2001D22A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		2E21DE011E5670CF001E8A91 /* Extenisions */ = {
 			isa = PBXGroup;
 			children = (
+				2E3F775F1E590B6E005EF864 /* UIViewController+DismissKeyboard.swift */,
 				2E21DDFF1E5670C6001E8A91 /* ViewController+Alert.swift */,
 			);
 			name = Extenisions;
@@ -319,6 +322,7 @@
 				2EC7B5FB1E5666A8001D22A5 /* LandingViewController.swift in Sources */,
 				2E21DE001E5670C6001E8A91 /* ViewController+Alert.swift in Sources */,
 				2EC7B5F91E566690001D22A5 /* PrimeNumberViewController.swift in Sources */,
+				2E3F77601E590B6E005EF864 /* UIViewController+DismissKeyboard.swift in Sources */,
 				2EC7B5FD1E5666C0001D22A5 /* PrimeNumberListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

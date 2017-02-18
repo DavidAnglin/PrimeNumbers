@@ -56,6 +56,12 @@ class LandingViewController: UIViewController {
     
     @IBAction func unwindToLandingPage(segue: UIStoryboardSegue) {}
     
+    // MARK: - View Controller Life Cycle Methods -
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+    }
+    
     // MARK: - Navigation
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if (identifier == SegueIdentifiers.toPrimeNumberLabel.rawValue) {

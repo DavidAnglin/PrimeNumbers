@@ -32,7 +32,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View a Specific Prime Number:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4A-q5-drC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View a Specific Location of a Prime Number:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4A-q5-drC">
                                 <rect key="frame" x="8" y="358.5" width="359" height="67"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
                                 <nil key="highlightedColor"/>
@@ -106,7 +106,6 @@
                             <constraint firstAttribute="trailing" secondItem="1Ru-K6-siF" secondAttribute="trailing" constant="8" id="UvD-PY-fP8"/>
                             <constraint firstItem="1Ru-K6-siF" firstAttribute="top" secondItem="33O-aC-WRf" secondAttribute="bottom" constant="8" id="VDS-gV-oQC"/>
                             <constraint firstItem="1Ru-K6-siF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WrR-90-P0V"/>
-                            <constraint firstItem="h4A-q5-drC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ypm-Xa-BCF"/>
                             <constraint firstAttribute="trailing" secondItem="kVj-vZ-PWI" secondAttribute="trailing" constant="8" id="ajO-0d-nHu"/>
                             <constraint firstItem="7US-qN-isx" firstAttribute="top" secondItem="h4A-q5-drC" secondAttribute="bottom" constant="8" id="cyd-wB-5nv"/>
                             <constraint firstAttribute="trailing" secondItem="33O-aC-WRf" secondAttribute="trailing" constant="8" id="dM4-rf-W5a"/>
